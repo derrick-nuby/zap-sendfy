@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Eye, EyeOff, LoaderIcon } from "lucide-react";
 import { useRouter } from 'next/navigation';
-import React, { useState } from 'react';
+import React from 'react';
 import { toast } from "sonner";
 import { Label } from "../ui/label";
 import { createAccount } from "@/lib";
@@ -12,11 +12,10 @@ import { UserFormData, userSchema } from "@/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
+import { PasswordInput } from "../ui/password-input";
 
 const SignUpForm = () => {
     const router = useRouter();
-    const [showPassword, setShowPassword] = useState(false);
-
     const {
         register,
         handleSubmit,
@@ -29,7 +28,7 @@ const SignUpForm = () => {
         mutationFn: createAccount,
         onSuccess: (data) => {
             toast.success('Account created successfully!');
-            router.push("/login");
+            router.push("/auth/sign-in");
         },
         onError: (error: Error) => {
             toast.error(error.message);
@@ -99,31 +98,18 @@ const SignUpForm = () => {
                     <Label htmlFor="password">
                         Password
                     </Label>
-                    <div className="relative w-full">
-                        <Input
+                    <div className="w-full">
+                        <PasswordInput
                             id="password"
-                            type={showPassword ? "text" : "password"}
                             {...register('password')}
                             // disabled={isUpdating}
                             placeholder="Enter your password"
                             className="w-full focus-visible:border-foreground"
+                            autoComplete="new-password"
                         />
                         {errors.password && (
                             <p className="text-red-500 text-xs">{errors.password.message}</p>
                         )}
-                        <Button
-                            type="button"
-                            size="icon"
-                            variant="ghost"
-                            className="absolute top-1 right-1"
-                            onClick={() => setShowPassword(!showPassword)}
-                        >
-                            {showPassword ?
-                                <EyeOff className="w-4 h-4" /> :
-                                <Eye className="w-4 h-4" />
-                            }
-                        </Button>
-
                     </div>
                 </div>
                 <div className="mt-4 space-y-2">
@@ -131,29 +117,17 @@ const SignUpForm = () => {
                         Confirm Password
                     </Label>
                     <div className="relative w-full">
-                        <Input
+                        <PasswordInput
                             id="confirmPassword"
                             {...register('confirmPassword')}
-                            type={showPassword ? "text" : "password"}
                             // disabled={isUpdating}
                             placeholder="Confirm Your Password"
                             className="w-full focus-visible:border-foreground"
+                            autoComplete="new-password"
                         />
                         {errors.confirmPassword && (
                             <p className="text-red-500 text-xs">{errors.confirmPassword.message}</p>
                         )}
-                        <Button
-                            type="button"
-                            size="icon"
-                            variant="ghost"
-                            className="absolute top-1 right-1"
-                            onClick={() => setShowPassword(!showPassword)}
-                        >
-                            {showPassword ?
-                                <EyeOff className="w-4 h-4" /> :
-                                <Eye className="w-4 h-4" />
-                            }
-                        </Button>
                     </div>
                 </div>
                 <div className="mt-4 w-full">
