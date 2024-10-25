@@ -8,7 +8,7 @@ const SignInPage = () => {
                 <Link href="/#home" className="flex items-center gap-x-2">
                     <Icons.logo className="w-6 h-6" />
                     <h1 className="text-lg font-medium">
-                        linkify
+                        ZapSendify
                     </h1>
                 </Link>
             </div>
@@ -36,7 +36,7 @@ const SignInPage = () => {
                 </p>
             </div>
         </div>
-    )
+    );
 };
 
-export default SignInPage
+export default SignInPage;
