@@ -27,8 +27,8 @@ export const getAllUsers = async () => {
     const response = await axiosInstance.get('/user/all');
     return response.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -37,8 +37,8 @@ export const modifyUser = async (userId: string, userData: Partial<UserFormData>
     const response = await axiosInstance.put(`/user/${userId}`, userData);
     return response.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -47,8 +47,8 @@ export const deleteUser = async (userId: string) => {
     const response = await axiosInstance.delete(`/user/${userId}`);
     return response.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -57,8 +57,8 @@ export const logoutUser = async () => {
     const response = await axiosInstance.get('/user/logout');
     return response.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -67,7 +67,7 @@ export const getSingleUser = async () => {
     const response = await axiosInstance.get('/user/you');
     return response.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };

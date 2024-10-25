@@ -7,8 +7,8 @@ export const getAllSmtps = async () => {
     const response = await axiosInstance.get('/smtps');
     return response.data.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -17,8 +17,8 @@ export const getUserSmtps = async () => {
     const response = await axiosInstance.get('/smtps/user');
     return response.data.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -27,8 +27,8 @@ export const getSingleSmtp = async (smtpId: string) => {
     const response = await axiosInstance.get(`/smtps/${smtpId}`);
     return response.data.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -37,8 +37,8 @@ export const createSmtp = async (smtpData: SmtpFormData) => {
     const response = await axiosInstance.post('/smtps', smtpData);
     return response.data.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -47,8 +47,8 @@ export const updateSmtp = async (smtpId: string, smtpData: Partial<SmtpFormData>
     const response = await axiosInstance.put(`/smtps/${smtpId}`, smtpData);
     return response.data.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -57,8 +57,8 @@ export const deleteSmtp = async (smtpId: string) => {
     const response = await axiosInstance.delete(`/smtps/${smtpId}`);
     return response.data.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -67,7 +67,7 @@ export const sendSmtpVerification = async (smtpId: string, email: string) => {
     const response = await axiosInstance.post(`/sendVerification`, { smtpId, email });
     return response.data.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
