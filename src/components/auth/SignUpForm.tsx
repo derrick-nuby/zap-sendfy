@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Eye, EyeOff, LoaderIcon } from "lucide-react";
+import { LoaderIcon } from "lucide-react";
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { toast } from "sonner";
@@ -19,7 +19,7 @@ const SignUpForm = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: { errors, isSubmitting },
     } = useForm<UserFormData>({
         resolver: zodResolver(userSchema),
     });
@@ -54,7 +54,7 @@ const SignUpForm = () => {
                         id="name"
                         type="name"
                         {...register('name')}
-                        // disabled={isUpdating}
+                        disabled={isSubmitting}
                         placeholder="Enter your name"
                         className="w-full focus-visible:border-foreground"
                     />
@@ -70,7 +70,7 @@ const SignUpForm = () => {
                         id="phone"
                         type="text"
                         {...register('phone')}
-                        // disabled={isUpdating}
+                        disabled={isSubmitting}
                         placeholder="Enter your Phone number"
                         className="w-full focus-visible:border-foreground"
                     />
@@ -86,7 +86,7 @@ const SignUpForm = () => {
                         id="email"
                         type="email"
                         {...register('email')}
-                        // disabled={isUpdating}
+                        disabled={isSubmitting}
                         placeholder="Enter your email"
                         className="w-full focus-visible:border-foreground"
                     />
@@ -102,7 +102,7 @@ const SignUpForm = () => {
                         <PasswordInput
                             id="password"
                             {...register('password')}
-                            // disabled={isUpdating}
+                            disabled={isSubmitting}
                             placeholder="Enter your password"
                             className="w-full focus-visible:border-foreground"
                             autoComplete="new-password"
@@ -120,7 +120,7 @@ const SignUpForm = () => {
                         <PasswordInput
                             id="confirmPassword"
                             {...register('confirmPassword')}
-                            // disabled={isUpdating}
+                            disabled={isSubmitting}
                             placeholder="Confirm Your Password"
                             className="w-full focus-visible:border-foreground"
                             autoComplete="new-password"
@@ -133,9 +133,14 @@ const SignUpForm = () => {
                 <div className="mt-4 w-full">
                     <Button
                         type="submit"
+                        disabled={isSubmitting}
                         className="w-full"
                     >
-                        Continue
+                        {isSubmitting ? (
+                            <LoaderIcon className="w-5 h-5 animate-spin" />
+                        ) : (
+                            "Continue"
+                        )}
                     </Button>
                 </div>
             </form>

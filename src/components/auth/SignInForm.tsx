@@ -13,6 +13,7 @@ import { LoginFormData, loginSchema } from "@/types";
 import { loginUser } from "@/lib";
 import { useMutation } from "@tanstack/react-query";
 import { useUser } from "@/context/UserContext";
+import { PasswordInput } from "../ui/password-input";
 
 const SignInForm = () => {
     const router = useRouter();
@@ -22,7 +23,7 @@ const SignInForm = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: { errors, isSubmitting },
     } = useForm<LoginFormData>({
         resolver: zodResolver(loginSchema),
     });
@@ -56,7 +57,7 @@ const SignInForm = () => {
                         id="email"
                         type="email"
                         {...register('email')}
-                        // disabled={mutation.isLoading}
+                        disabled={isSubmitting}
                         placeholder="Enter your email"
                         className="w-full focus-visible:border-foreground"
                     />
@@ -67,28 +68,13 @@ const SignInForm = () => {
                 <div className="mt-4 space-y-2">
                     <Label htmlFor="password">Password</Label>
                     <div className="relative w-full">
-                        <Input
+                        <PasswordInput
                             id="password"
                             {...register('password')}
-                            type={showPassword ? "text" : "password"}
-                            // disabled={mutation.isLoading}
+                            disabled={isSubmitting}
                             placeholder="Enter your password"
                             className="w-full focus-visible:border-foreground"
                         />
-                        <Button
-                            type="button"
-                            size="icon"
-                            variant="ghost"
-                            // disabled={mutation.isLoading}
-                            className="absolute top-1 right-1"
-                            onClick={() => setShowPassword(!showPassword)}
-                        >
-                            {showPassword ? (
-                                <EyeOff className="w-4 h-4" />
-                            ) : (
-                                <Eye className="w-4 h-4" />
-                            )}
-                        </Button>
                     </div>
                     {errors.password && (
                         <p className="text-red-500 text-xs">{errors.password.message}</p>
@@ -97,16 +83,14 @@ const SignInForm = () => {
                 <div className="mt-4 w-full">
                     <Button
                         type="submit"
-                        // disabled={mutation.isLoading}
+                        disabled={isSubmitting}
                         className="w-full"
                     >
-                        {/* {mutation.isLoading ? (
+                        {isSubmitting ? (
                             <LoaderIcon className="w-5 h-5 animate-spin" />
                         ) : (
                             "Sign in with email"
-                        )} */}
-
-                        Sign in with email
+                        )}
                     </Button>
                 </div>
             </form>
