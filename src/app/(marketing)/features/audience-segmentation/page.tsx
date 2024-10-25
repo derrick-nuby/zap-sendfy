@@ -37,7 +37,7 @@ const LinkShorteningPage = () => {
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
                             src="/assets/shorten-links.svg"
-                            alt="Shorten links and track their performance"
+                            alt="Divide your subscribers based on behaviors, demographics, past interactions, and more!"
                             width={80}
                             height={80}
                             className="w-full h-auto"

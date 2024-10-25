@@ -37,7 +37,7 @@ const LinkShorteningPage = () => {
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
                             src="/assets/qr-codes.svg"
-                            alt="Create QR codes for your links"
+                            alt="Use our Custom Templates feature to bring you brand to life."
                             width={80}
                             height={80}
                             className="w-full h-auto"

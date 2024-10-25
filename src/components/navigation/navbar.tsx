@@ -77,7 +77,7 @@ const Navbar = () => {
                                                                             All Features
                                                                         </h6>
                                                                         <p className="text-sm leading-tight text-muted-foreground">
-                                                                            Manage links, track performance, and more.
+                                                                            Design, personalize, and track your emails and more.
                                                                         </p>
                                                                     </Link>
                                                                 </NavigationMenuLink>

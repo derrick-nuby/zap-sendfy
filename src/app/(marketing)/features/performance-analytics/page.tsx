@@ -37,7 +37,7 @@ const LinkShorteningPage = () => {
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
                             src="/assets/analytics.svg"
-                            alt="Protect your links with a password"
+                            alt="Get a clear view of how your email campaigns perform with easy-to-understand metrics and insights"
                             width={80}
                             height={80}
                             className="w-full h-auto"
