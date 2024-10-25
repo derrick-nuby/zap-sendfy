@@ -1,4 +1,6 @@
 import { AnimationContainer, MaxWidthWrapper } from "@/components";
+import FeaturePrompt from "@/components/global/FeaturePrompt";
+import Partners from "@/components/global/Partners";
 import { Button } from "@/components/ui/button";
 import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
@@ -45,54 +47,12 @@ const LinkShorteningPage = () => {
                         />
                     </div>
                 </AnimationContainer>
-                <AnimationContainer delay={0.3} className="w-full">
-                    <div className="py-14">
-                        <div className="mx-auto px-4 md:px-8">
-                            <h2 className="text-center text-sm font-medium font-heading text-neutral-400 uppercase">
-                                Trusted by the best in the industry
-                            </h2>
-                            <div className="mt-8">
-                                <ul className="flex flex-wrap items-center gap-x-6 gap-y-6 md:gap-x-16 justify-center py-8">
-                                    {COMPANIES.map((company) => (
-                                        <li key={company.name}>
-                                            <Image
-                                                src={company.logo}
-                                                alt={company.name}
-                                                width={80}
-                                                height={80}
-                                                quality={100}
-                                                className="w-28 h-auto"
-                                            />
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </AnimationContainer>
+                <Partners />
             </MaxWidthWrapper>
-            <MaxWidthWrapper className="pt-20">
-                <AnimationContainer delay={0.4} className="w-full">
-                    <LampContainer className="max-w-5xl mx-auto">
-                        <div className="flex flex-col items-center justify-center relative w-full text-center">
-                            <h2 className="bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-7xl mt-8">
-                                Get to Know Your Customers Like Never Before
-                            </h2>
-                            <p className="text-muted-foreground mt-6 max-w-3xl mx-auto text-base md:text-lg">
-                                With audience segmentation, you can target your messages to meet the unique needs of each segment. For example, if you own a retail business, segment by purchase history to send discounts on specific product categories. If you’re in the service industry, segment by engagement level, so active clients receive updates, while new subscribers are introduced to your brand more gradually.
-                            </p>
-                            <div className="mt-6">
-                                <Button asChild>
-                                    <Link href="/auth/sign-up" className="flex items-center">
-                                        Get started for free
-                                        <ArrowRightIcon className="w-4 h-4 ml-2" />
-                                    </Link>
-                                </Button>
-                            </div>
-                        </div>
-                    </LampContainer>
-                </AnimationContainer>
-            </MaxWidthWrapper>
+            <FeaturePrompt
+                headingText={"Get to Know Your Customers Like Never Before"}
+                descriptionText={"With audience segmentation, you can target your messages to meet the unique needs of each segment. For example, if you own a retail business, segment by purchase history to send discounts on specific product categories. If you’re in the service industry, segment by engagement level, so active clients receive updates, while new subscribers are introduced to your brand more gradually."}
+            />
         </>
     );
 };
