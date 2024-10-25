@@ -12,13 +12,13 @@ const LinkShorteningPage = () => {
         <>
             <MaxWidthWrapper>
                 <AnimationContainer delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-10 max-w-lg mx-auto">
+                    <div className="flex flex-col items-center justify-center py-10 max-w-2xl mx-auto">
                         <MagicBadge title="Unique" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Create QR codes for your links
+                            Create Beautiful Emails with Ease
                         </h1>
                         <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Enhance your marketing strategy with custom QR codes. Drive engagement and track performance with ease.
+                            our custom Templates feature brings your brand to life with email designs that stand out in crowded inboxes. With a library of professionally designed templates, along with customizable options, you can create emails that capture your audience’s attention and reflect your brand’s unique style.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button size="sm" asChild>
@@ -75,11 +75,11 @@ const LinkShorteningPage = () => {
                 <AnimationContainer delay={0.4} className="w-full">
                     <LampContainer className="max-w-2xl mx-auto">
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
-                            <h2 className="bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-7xl mt-8">
-                                Powerup your link strategy
+                            <h2 className="bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-3xl font-semibold font-heading tracking-tight text-transparent md:text-5xl mt-8">
+                                Personalized Designs to Capture Attention
                             </h2>
-                            <p className="text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg">
-                                Take control of your links with advanced features and real-time insights. Simplify your workflow and achieve more.
+                            <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-base md:text-lg">
+                                Our templates are optimized for mobile and desktop, ensuring your emails look great on any device. You can customize colors, fonts, images, and layouts to match your brand, so each email is a cohesive part of your customer’s journey. Whether you want a minimalist design for a monthly newsletter or a vibrant look for a product launch, Zap-Sendify has a template for every need.
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
@@ -94,7 +94,7 @@ const LinkShorteningPage = () => {
                 </AnimationContainer>
             </MaxWidthWrapper>
         </>
-    )
+    );
 };
 
-export default LinkShorteningPage
+export default LinkShorteningPage;

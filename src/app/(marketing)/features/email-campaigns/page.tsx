@@ -7,18 +7,18 @@ import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const LinkShorteningPage = () => {
+const AnalyticsPage = () => {
     return (
         <>
             <MaxWidthWrapper>
                 <AnimationContainer delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-10 max-w-lg mx-auto">
-                        <MagicBadge title="Secure" />
+                    <div className="flex flex-col items-center justify-center py-10 max-w-2xl mx-auto">
+                        <MagicBadge title="New" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Frotify your links with a password
+                            Unleash the Potential of Targeted Messaging
                         </h1>
                         <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Safeguard sensitive information with robust password protection, providing peace of mind and enhanced security.
+                            Our Email Campaigns feature empowers you to create and launch professional, effective email campaigns in a few simple steps. Whether you’re promoting a new product, sharing updates, or nurturing leads, we provide the tools to reach your audience with personalized, engaging messages.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button size="sm" asChild>
@@ -37,8 +37,8 @@ const LinkShorteningPage = () => {
                 <AnimationContainer delay={0.2} className="w-full">
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
-                            src="/assets/password-protection.svg"
-                            alt="Protect your links with a password"
+                            src="/assets/analytics.svg"
+                            alt="Advanced analytics for your business"
                             width={80}
                             height={80}
                             className="w-full h-auto"
@@ -73,13 +73,13 @@ const LinkShorteningPage = () => {
             </MaxWidthWrapper>
             <MaxWidthWrapper className="pt-20">
                 <AnimationContainer delay={0.4} className="w-full">
-                    <LampContainer className="max-w-2xl mx-auto">
+                    <LampContainer className="max-w-3xl mx-auto">
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
-                            <h2 className="bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-7xl mt-8">
-                                Powerup your link strategy
+                            <h2 className="bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-7xl mt-9">
+                                Create Powerful Campaigns in Minutes
                             </h2>
-                            <p className="text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg">
-                                Take control of your links with advanced features and real-time insights. Simplify your workflow and achieve more.
+                            <p className="text-muted-foreground mt-5 max-w-2xl mx-auto text-base md:text-lg">
+                                Our user-friendly campaign builder is designed for everyone—from beginners to marketing professionals—offering pre-designed templates and intuitive editing tools so you can create emails that stand out. With built-in scheduling, automation, and personalization options, every campaign you launch can be tailored to the unique interests of your customers.
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
@@ -94,7 +94,7 @@ const LinkShorteningPage = () => {
                 </AnimationContainer>
             </MaxWidthWrapper>
         </>
-    )
+    );
 };
 
-export default LinkShorteningPage
+export default AnalyticsPage;

@@ -1,4 +1,4 @@
-import { HelpCircleIcon, LineChartIcon, Link2Icon, LockIcon, NewspaperIcon, QrCodeIcon } from "lucide-react";
+import { MailIcon, TrendingUpIcon, UsersIcon, SettingsIcon, NewspaperIcon, HelpCircleIcon } from "lucide-react";
 
 export const NAV_LINKS = [
     {
@@ -6,28 +6,28 @@ export const NAV_LINKS = [
         href: "/features",
         menu: [
             {
-                title: "Link Shortening",
-                tagline: "Shorten links and track their performance.",
-                href: "/features/link-shortening",
-                icon: Link2Icon,
+                title: "Email Campaigns",
+                tagline: "Create and send custom email campaigns.",
+                href: "/features/email-campaigns",
+                icon: MailIcon,
             },
             {
-                title: "Password Protection",
-                tagline: "Secure your links with a password.",
-                href: "/features/password-protection",
-                icon: LockIcon,
+                title: "Audience Segmentation",
+                tagline: "Organize subscribers into targeted segments.",
+                href: "/features/audience-segmentation",
+                icon: UsersIcon,
             },
             {
-                title: "Advanced Analytics",
-                tagline: "Gain insights into who is clicking your links.",
-                href: "/features/analytics",
-                icon: LineChartIcon,
+                title: "Performance Analytics",
+                tagline: "Track engagement and view detailed analytics.",
+                href: "/features/performance-analytics",
+                icon: TrendingUpIcon,
             },
             {
-                title: "Custom QR Codes",
-                tagline: "Use QR codes to reach your audience.",
-                href: "/features/qr-codes",
-                icon: QrCodeIcon,
+                title: "Customizable Templates",
+                tagline: "Use pre-built templates or create your own.",
+                href: "/features/custom-templates",
+                icon: SettingsIcon,
             },
         ],
     },

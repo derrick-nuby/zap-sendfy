@@ -8,7 +8,7 @@ export const PLANS = [
         },
         features: [
             { text: "200 Subscribers" },
-            { text: "1 email per week", tooltip: "You can send 1 email every week." },
+            { text: "200 emails per week", tooltip: "You can send 200 emails every week." },
             { text: "3 segments only", tooltip: "Organize your subscribers into segments for targeted emails." },
             { text: "Customizable email templates", tooltip: "Use community-submitted templates for your emails." },
             { text: "Basic tracking", tooltip: "Track opens, but detailed analytics are not supported." },
@@ -31,7 +31,7 @@ export const PLANS = [
         },
         features: [
             { text: "700 Subscribers" },
-            { text: "3 emails per week", tooltip: "Send up to 3 emails every week." },
+            { text: "2,100 emails per week", tooltip: "Send up to 2,100 emails every week." },
             { text: "Customizable email templates", tooltip: "Create and customize your email designs." },
             { text: "Advanced tracking", tooltip: "Track opens and clicks on your emails." },
             { text: "Real-time analytics", tooltip: "View statistics on user engagement." },

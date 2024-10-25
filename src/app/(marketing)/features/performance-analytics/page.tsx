@@ -12,13 +12,13 @@ const LinkShorteningPage = () => {
         <>
             <MaxWidthWrapper>
                 <AnimationContainer delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-10 max-w-xl mx-auto">
-                        <MagicBadge title="Simple" />
+                    <div className="flex flex-col items-center justify-center py-10 max-w-3xl mx-auto">
+                        <MagicBadge title="Secure" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Shorten links and track their performance
+                            Analyze, Adjust, and Achieve Your Marketing Goals
                         </h1>
                         <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Simplify your workflow with powerful link management tools. Shorten links, track clicks, and optimize your strategy with ease.
+                            Get a clear view of how your email campaigns perform with easy-to-understand metrics and insights. Track open rates, click-throughs, conversions, and more—all in real time—so you know exactly what’s working and what needs improvement.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button size="sm" asChild>
@@ -37,8 +37,8 @@ const LinkShorteningPage = () => {
                 <AnimationContainer delay={0.2} className="w-full">
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
-                            src="/assets/shorten-links.svg"
-                            alt="Shorten links and track their performance"
+                            src="/assets/password-protection.svg"
+                            alt="Protect your links with a password"
                             width={80}
                             height={80}
                             className="w-full h-auto"
@@ -75,11 +75,11 @@ const LinkShorteningPage = () => {
                 <AnimationContainer delay={0.4} className="w-full">
                     <LampContainer className="max-w-2xl mx-auto">
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
-                            <h2 className="bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-7xl mt-8">
-                                Powerup your link strategy
+                            <h2 className="bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-semibold font-heading tracking-tight text-transparent md:text-5xl mt-8">
+                                Make Data-Driven Decisions with Real-Time Insights
                             </h2>
-                            <p className="text-muted-foreground mt-6 max-w-lg mx-auto text-base md:text-lg">
-                                Take control of your links with advanced features and real-time insights. Simplify your workflow and achieve more.
+                            <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-base md:text-lg">
+                                Our analytics dashboard translates complex data into actionable insights, making it simple for you to understand your audience’s preferences and behavior. From small businesses looking to grow their reach to larger organizations needing robust reporting, our analytics give you the edge to fine-tune your marketing approach.
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
@@ -94,7 +94,7 @@ const LinkShorteningPage = () => {
                 </AnimationContainer>
             </MaxWidthWrapper>
         </>
-    )
+    );
 };
 
-export default LinkShorteningPage
+export default LinkShorteningPage;
