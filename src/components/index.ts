@@ -10,9 +10,6 @@ import AnimationContainer from "./global/animation-container";
 import Navbar from "./navigation/navbar";
 import Footer from "./navigation/footer";
 
-// providers
-import Providers from "./providers/providers";
-
 // dashboard
 import Sidebar from "./dashboard/sidebar";
 import DashboardNavbar from "./dashboard/dashboard-navbar";
@@ -34,7 +31,6 @@ export {
     Navbar,
     Footer,
 
-    Providers,
 
     Sidebar,
     DashboardNavbar,
