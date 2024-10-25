@@ -34,14 +34,14 @@ const HomePage = async () => {
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            Smart Links with <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
+                            Smart Campaigns with <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
                                 Precision
                             </span>
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
-                            Effortlessly streamline your link management with Linkify.
+                            Effortlessly streamline your email communication with Zap-Sendify.
                             <br className="hidden md:block" />
-                            <span className="hidden md:block">Shorten, track, and organize all your links in one place.</span>
+                            <span className="hidden md:block">Design, personalize, and track your emails all in one place.</span>
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
@@ -111,10 +111,10 @@ const HomePage = async () => {
                     <div className="flex flex-col w-full items-center lg:items-center justify-center py-8">
                         <MagicBadge title="Features" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Manage Links Like a Pro
+                            Manage Emails Like a Pro
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Linkify is a powerful link management tool that helps you shorten, track, and organize all your links in one place.
+                            Zap-Sendify is a powerful tool that empowers you to craft, schedule, and monitor email campaigns with ease. Reach your audience effectively every time.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -133,10 +133,10 @@ const HomePage = async () => {
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
                         <MagicBadge title="The Process" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Effortless link management in 3 steps
+                            Effortless Email Campaigns in 3 Steps
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Follow these simple steps to optimize, organize, and share your links with ease.
+                            Follow these simple steps to personalize, schedule, and analyze your emails for maximum impact.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -173,7 +173,7 @@ const HomePage = async () => {
                             Choose a plan that works for you
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Get started with Linkify today and enjoy more features with our pro plans.
+                            Get started with Zap Sendify today and enjoy more features with our pro plans.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -299,10 +299,10 @@ const HomePage = async () => {
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
-                                Step into the future of link management
+                                Step into the Future of Email Marketing
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
-                                Experience the cutting-edge solution that transforms how you handle your links. Elevate your online presence with our next-gen platform.
+                                Experience an advanced solution that transforms how you handle email campaigns. Elevate your reach and engagement with our next-gen platform.
                             </p>
                             <div className="mt-6">
                                 <Button>

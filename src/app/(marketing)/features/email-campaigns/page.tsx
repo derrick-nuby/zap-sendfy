@@ -2,10 +2,7 @@ import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import FeaturePrompt from "@/components/global/FeaturePrompt";
 import Partners from "@/components/global/Partners";
 import { Button } from "@/components/ui/button";
-import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
-import { COMPANIES } from "@/utils";
-import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,7 +11,7 @@ const AnalyticsPage = () => {
         <>
             <MaxWidthWrapper>
                 <AnimationContainer delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-10 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-10 max-w-3xl mx-auto">
                         <MagicBadge title="New" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Unleash the Potential of Targeted Messaging

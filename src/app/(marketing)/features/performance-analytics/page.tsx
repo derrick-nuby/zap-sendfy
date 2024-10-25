@@ -2,10 +2,7 @@ import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import FeaturePrompt from "@/components/global/FeaturePrompt";
 import Partners from "@/components/global/Partners";
 import { Button } from "@/components/ui/button";
-import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
-import { COMPANIES } from "@/utils";
-import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,7 +12,7 @@ const LinkShorteningPage = () => {
             <MaxWidthWrapper>
                 <AnimationContainer delay={0.1} className="w-full">
                     <div className="flex flex-col items-center justify-center py-10 max-w-3xl mx-auto">
-                        <MagicBadge title="Secure" />
+                        <MagicBadge title="Analyze" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Analyze, Adjust, and Achieve Your Marketing Goals
                         </h1>
@@ -39,7 +36,7 @@ const LinkShorteningPage = () => {
                 <AnimationContainer delay={0.2} className="w-full">
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
-                            src="/assets/password-protection.svg"
+                            src="/assets/analytics.svg"
                             alt="Protect your links with a password"
                             width={80}
                             height={80}

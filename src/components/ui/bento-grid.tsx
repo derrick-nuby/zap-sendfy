@@ -13,8 +13,8 @@ import { Label } from "./label";
 export const CARDS = [
     {
         Icon: Link2Icon,
-        name: "Shorten links",
-        description: "Create short links that are easy to remember and share.",
+        name: "Email Campaigns",
+        description: "Design targeted campaigns to engage your audience effectively.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
@@ -22,19 +22,19 @@ export const CARDS = [
             <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
                 <CardHeader>
                     <CardTitle>
-                        Create short links
+                        Launch Campaigns with Ease
                     </CardTitle>
                     <CardDescription>
-                        Create short links that are easy to remember and share.
+                        Set up tailored email campaigns to reach your audience at the right time.
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="-mt-4">
                     <Label>
-                        Paste your link
+                        Compose your message
                     </Label>
                     <Input
                         type="text"
-                        placeholder="Paste your link here..."
+                        placeholder="Write your campaign message..."
                         className="w-full focus-visible:ring-0 focus-visible:ring-transparent"
                     />
                 </CardContent>
@@ -43,29 +43,26 @@ export const CARDS = [
     },
     {
         Icon: SearchIcon,
-        name: "Search your links",
-        description: "Quickly find the links you need with AI-powered search.",
+        name: "Audience Segmentation",
+        description: "Target specific groups with personalized messages for better results.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2",
         background: (
             <Command className="absolute right-10 top-10 w-[70%] origin-to translate-x-0 border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10 p-2">
-                <Input placeholder="Type to search..." />
+                <Input placeholder="Search audience segments..." />
                 <div className="mt-1 cursor-pointer">
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/hdf00c</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sdv0n0</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/03gndo</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/09vmmw</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/s09vws</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sd8fv5</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Segment: Loyal Subscribers</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Segment: New Signups</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Segment: Inactive Users</div>
                 </div>
             </Command>
         ),
     },
     {
         Icon: WaypointsIcon,
-        name: "Connect your apps",
-        description: "Integrate with your favorite apps and services.",
+        name: "Custom Templates",
+        description: "Choose from beautiful templates to make your emails stand out.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
@@ -75,11 +72,11 @@ export const CARDS = [
     },
     {
         Icon: CalendarIcon,
-        name: "Calendar",
-        description: "Keep track of your links with our calendar view.",
-        className: "col-span-3 lg:col-span-1",
+        name: "Scheduling",
+        description: "Plan and schedule your email campaigns to reach your audience at the right time.",
         href: "#",
         cta: "Learn more",
+        className: "col-span-3 lg:col-span-1",
         background: (
             <Calendar
                 mode="single"

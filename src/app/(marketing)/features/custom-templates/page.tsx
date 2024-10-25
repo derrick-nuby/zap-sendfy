@@ -2,10 +2,7 @@ import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import FeaturePrompt from "@/components/global/FeaturePrompt";
 import Partners from "@/components/global/Partners";
 import { Button } from "@/components/ui/button";
-import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
-import { COMPANIES } from "@/utils";
-import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
