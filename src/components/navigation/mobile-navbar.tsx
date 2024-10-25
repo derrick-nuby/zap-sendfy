@@ -20,7 +20,7 @@ import React, { useState } from 'react';
 
 const MobileNavbar = () => {
 
-    const isSignedIn = true;
+    const isSignedIn = false;
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
 

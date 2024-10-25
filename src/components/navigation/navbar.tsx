@@ -20,7 +20,7 @@ import AnimationContainer from "../global/animation-container";
 
 const Navbar = () => {
 
-    const user = "derrick";
+    const user = false;
 
     const [scroll, setScroll] = useState(false);
 
