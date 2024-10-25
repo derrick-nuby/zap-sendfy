@@ -1,0 +1,38 @@
+[
+    {
+        "title": "How to Enhance Email Deliverability with Zap Sendify",
+        "image": "/assets/blog.jpg",
+        "author_image": "https://example.com/images/author1.jpg",
+        "author_name": "Jean-Pierre Ndoli",
+        "date_published": "2024-10-05",
+        "description": "Discover strategies to improve email deliverability and ensure your messages reach the inbox.",
+        "slug": "how-to-enhance-email-deliverability-with-zap-sendify"
+    },
+    {
+        "title": "The Ultimate Guide to Segmenting Your Email Lists",
+        "image": "/assets/blog.jpg",
+        "author_image": "https://example.com/images/author2.jpg",
+        "author_name": "Diane Umutoni",
+        "date_published": "2024-09-28",
+        "description": "Learn how to effectively segment your email lists for targeted communication.",
+        "slug": "the-ultimate-guide-to-segmenting-your-email-lists"
+    },
+    {
+        "title": "Why Automated Email Campaigns Are Key to Success",
+        "image": "/assets/blog.jpg",
+        "author_image": "https://example.com/images/author3.jpg",
+        "author_name": "Eric Nshimiyimana",
+        "date_published": "2024-09-20",
+        "description": "Understand the importance of automated email campaigns in boosting engagement and sales.",
+        "slug": "why-automated-email-campaigns-are-key-to-success"
+    },
+    {
+        "title": "Top 5 Tips for Crafting Engaging Email Content",
+        "image": "/assets/blog.jpg",
+        "author_image": "https://example.com/images/author4.jpg",
+        "author_name": "Amina Mukamurera",
+        "date_published": "2024-09-15",
+        "description": "Explore essential tips for creating compelling email content that captivates your audience.",
+        "slug": "top-5-tips-for-crafting-engaging-email-content"
+    }
+]
