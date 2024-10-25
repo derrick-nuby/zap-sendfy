@@ -1,6 +1,6 @@
 // auth
-import SignInForm from "./auth/signin-form";
-import SignUpForm from "./auth/signup-form";
+import SignInForm from "./auth/SignInForm";
+import SignUpForm from "./auth/SignUpForm";
 
 // global
 import { Icons } from "./global/icons";

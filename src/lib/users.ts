@@ -7,8 +7,8 @@ export const createAccount = async (userData: UserFormData) => {
     const response = await axiosInstance.post('/user', userData);
     return response.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 
@@ -17,8 +17,8 @@ export const loginUser = async (credentials: LoginFormData) => {
     const response = await axiosInstance.post('/user/login', credentials);
     return response.data;
   } catch (error) {
-    handleAxiosError(error);
-    throw error;
+    const errorMessage = handleAxiosError(error);
+    throw new Error(errorMessage);
   }
 };
 

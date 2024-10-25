@@ -36,9 +36,8 @@ const SignInForm = () => {
             toast.success("Signed in successfully!");
             router.push("/dashboard");
         },
-        onError: (error) => {
-            toast.error("Failed to sign in. Please try again.");
-            console.error(error);
+        onError: (error: Error) => {
+            toast.error(error.message);
         },
     });
 
@@ -62,7 +61,7 @@ const SignInForm = () => {
                         className="w-full focus-visible:border-foreground"
                     />
                     {errors.email && (
-                        <p className="text-red-500 text-sm">{errors.email.message}</p>
+                        <p className="text-red-500 text-xs">{errors.email.message}</p>
                     )}
                 </div>
                 <div className="mt-4 space-y-2">
@@ -92,7 +91,7 @@ const SignInForm = () => {
                         </Button>
                     </div>
                     {errors.password && (
-                        <p className="text-red-500 text-sm">{errors.password.message}</p>
+                        <p className="text-red-500 text-xs">{errors.password.message}</p>
                     )}
                 </div>
                 <div className="mt-4 w-full">

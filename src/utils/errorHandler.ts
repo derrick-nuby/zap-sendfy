@@ -1,16 +1,41 @@
 import { AxiosError } from "axios";
 
-export const handleAxiosError = (error: unknown) => {
+export const handleAxiosError = (error: unknown): string => {
   if (error instanceof AxiosError) {
     if (error.response) {
-      console.error(`Error: ${error.response.data?.message || 'Unknown error'}`);
-      console.error(`Status code: ${error.response.status}`);
-    } else if (error.request) {
-      console.error('No response received from the server.');
-    } else {
-      console.error('Error in setting up request:', error.message);
+      // Handle different types of error responses
+      const errorData = error.response.data;
+
+      // Check for different error formats
+      if (typeof errorData === 'string') {
+        return errorData;
+      }
+
+      // Handle object error formats
+      if (errorData) {
+        // Check for error or message property
+        if (errorData.error) {
+          return errorData.error;
+        }
+        if (errorData.message) {
+          return errorData.message;
+        }
+      }
+
+      // Fallback for unknown error format
+      return `Server error: ${error.response.status}`;
     }
-  } else {
-    console.error('An unexpected error occurred:', error);
+
+    if (error.request) {
+      return 'Unable to reach the server. Please check your internet connection.';
+    }
+
+    return error.message || 'An error occurred while processing your request.';
   }
+
+  if (error instanceof Error) {
+    return error.message;
+  }
+
+  return 'An unexpected error occurred.';
 };

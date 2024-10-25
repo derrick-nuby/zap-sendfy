@@ -12,7 +12,7 @@ export interface User {
 
 export const loginSchema = z.object({
   email: z.string().email('Invalid email format'),
-  password: z.string().min(8, 'Password must be at least 6 characters'),
+  password: z.string().min(8, 'Password must be at least 8 characters'),
 });
 
 export const userSchema = z.object({
@@ -20,6 +20,7 @@ export const userSchema = z.object({
   email: z.string().email('Invalid email format'),
   phone: z.string().min(10, 'Phone must be at least 10 characters'),
   password: z.string().regex(RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@.#$!%*?&^])[A-Za-z\\d@.#$!%*?&^]{8,15}$'), 'Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character'),
+  confirmPassword: z.string().regex(RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@.#$!%*?&^])[A-Za-z\\d@.#$!%*?&^]{8,15}$'), 'Password Confirm must contain at least one uppercase letter, one lowercase letter, one digit, and one special character'),
 });
 
 export type UserFormData = z.infer<typeof userSchema>;
