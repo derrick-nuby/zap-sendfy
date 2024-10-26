@@ -13,14 +13,16 @@ import {
     SheetContent,
     SheetTrigger
 } from "@/components/ui/sheet";
+import { useUser } from "@/context/UserContext";
 import { cn, NAV_LINKS } from "@/utils";
 import { LucideIcon, Menu, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from 'react';
 
 const MobileNavbar = () => {
+    const { user, token } = useUser();
 
-    const isSignedIn = false;
+    const isSignedIn = Boolean(user && token);
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
 

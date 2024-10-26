@@ -17,10 +17,13 @@ import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from "../global/max-width-wrapper";
 import MobileNavbar from "./mobile-navbar";
 import AnimationContainer from "../global/animation-container";
+import { useUser } from "@/context/UserContext";
 
 const Navbar = () => {
 
-    const user = false;
+    const { user, token } = useUser();
+
+    const isSignedIn = Boolean(user && token);
 
     const [scroll, setScroll] = useState(false);
 
