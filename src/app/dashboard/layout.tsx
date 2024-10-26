@@ -1,6 +1,6 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/app-sidebar";
 import { ThemeProvider } from "../theme-provider";
+import { AppSidebar } from "@/components/dashboard/app-sidebar";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;

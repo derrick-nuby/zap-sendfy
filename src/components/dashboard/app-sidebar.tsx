@@ -19,14 +19,23 @@ import {
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from 'lucide-react';
 import { footerItems, navigationItems } from '@/data/dashboardNavigationItems';
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '../ui/collapsible';
+import Image from "next/image";
 
 export function AppSidebar() {
   const pathname = usePathname();
 
   return (
-    <Sidebar collapsible="icon" className="border-r">
+    <Sidebar collapsible='icon' className="border-r">
       <SidebarHeader>
+        <Image
+          src="/icons/logo.png"
+          alt="logo"
+          width={44}
+          height={44}
+          quality={100}
+          className="rounded-full bg-foreground/10 ring-1 ring-border"
+        />
       </SidebarHeader>
 
       <SidebarContent>
