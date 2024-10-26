@@ -10,10 +10,6 @@ import AnimationContainer from "./global/animation-container";
 import Navbar from "./navigation/navbar";
 import Footer from "./navigation/footer";
 
-// dashboard
-import Sidebar from "./dashboard/sidebar";
-import DashboardNavbar from "./dashboard/dashboard-navbar";
-
 // pricing
 import PricingCards from "./pricing-cards";
 
@@ -31,9 +27,6 @@ export {
     Navbar,
     Footer,
 
-
-    Sidebar,
-    DashboardNavbar,
 
     PricingCards,
 

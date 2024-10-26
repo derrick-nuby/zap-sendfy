@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "./globals.css";
 import { aeonik, cn, generateMetadata, inter } from "@/utils";
 import Providers from "./providers";
 
